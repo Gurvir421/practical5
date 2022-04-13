@@ -10,10 +10,14 @@
 #include "FilterOdd.h"
 #include "FilterNonPositive.h"
 #include "FilterForTwoDigitPositive.h"
+#include "ReduceGeneric.h"
+#include "ReduceMinimum.h"
+#include "ReduceGCD.h"
+
 using namespace std;
 int main () {
     
-    vector<int> table {10,2,3,4};
+    vector<int> table {105,30};
     //MapGeneric m;
     //MapTriple m;
     //MapAbsoluteValue m;
@@ -22,9 +26,13 @@ int main () {
     //vector<int> hello=m.map(table);
     vector<int> hello=m.filter(table);
     
-    for (int i=0;i<hello.size();i++) {
-        cout <<hello.at(i)<<endl;
-    }
+    ReduceGCD a;
+    cout << a.reduce(table) <<endl;
+    
+    
+    //for (int i=0;i<hello.size();i++) {
+    //    cout <<hello.at(i)<<endl;
+    //}
     
     
     return 0;
