@@ -19,7 +19,7 @@ vector<int> FilterGeneric::filter(vector<int> inputVector) {
     
     int value=inputVector.at(0);
     
-    if (g(value)==1) {
+    if (g(value)==true) {
         storage.push_back(value);
     }
 

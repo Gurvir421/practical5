@@ -8,16 +8,16 @@
 #include "MapAbsoluteValue.h"
 #include "FilterGeneric.h"
 #include "FilterOdd.h"
-
+#include "FilterNonPositive.h"
+#include "FilterForTwoDigitPositive.h"
 using namespace std;
 int main () {
     
-    vector<int> table {1,2,3,4};
-    
+    vector<int> table {10,2,3,4};
     //MapGeneric m;
     //MapTriple m;
     //MapAbsoluteValue m;
-    FilterOdd m;
+    FilterForTwoDigitPositive m;
     
     //vector<int> hello=m.map(table);
     vector<int> hello=m.filter(table);
@@ -25,6 +25,7 @@ int main () {
     for (int i=0;i<hello.size();i++) {
         cout <<hello.at(i)<<endl;
     }
+    
     
     return 0;
 }

@@ -1,5 +1,5 @@
-#ifndef FILTERODD
-#define FILTERODD
+#ifndef FILTERODD_H
+#define FILTERODD_H
 
 #include "FilterGeneric.h"
 #include <vector>
