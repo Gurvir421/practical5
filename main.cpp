@@ -17,22 +17,23 @@
 using namespace std;
 int main () {
     
-    vector<int> table {105,30};
+    vector<int> table {6, -11, 53, -16, 73, 128, 105, 104, -71, -179, 102, 12, 21, -145, -99, 199,-156, -186, 43, -189};
     //MapGeneric m;
     //MapTriple m;
-    //MapAbsoluteValue m;
-    FilterForTwoDigitPositive m;
+    MapAbsoluteValue m;
+    MapTriple n;
     
-    //vector<int> hello=m.map(table);
-    vector<int> hello=m.filter(table);
+    vector<int> hello=m.map(table);
+    vector<int> hello2=n.map(hello);
+    //vector<int> hello=m.filter(table);
     
-    ReduceGCD a;
-    cout << a.reduce(table) <<endl;
+    //ReduceMinimum a;
+    //cout << a.reduce(table) <<endl;
     
     
-    //for (int i=0;i<hello.size();i++) {
-    //    cout <<hello.at(i)<<endl;
-    //}
+    for (int i=0;i<hello.size();i++) {
+        cout <<hello2.at(i)<<endl;
+    }
     
     
     return 0;
