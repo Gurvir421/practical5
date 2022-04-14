@@ -10,14 +10,16 @@ int ReduceGeneric::reduce(vector<int> inputVector) {
     
     int size=inputVector.size();
     
-    if (size==0) {
-        return 0;
-    }
     if (check==0) {
         storage=inputVector.at(0);
         inputVector.erase(inputVector.begin());
         check=1;
     }
+    
+    if (size==0) {
+        return storage;
+    }
+    
     
     int value=inputVector.at(0);
 
