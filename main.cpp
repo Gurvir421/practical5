@@ -27,13 +27,14 @@ int main () {
     vector<int> hello2=n.map(hello);
     //vector<int> hello=m.filter(table);
     
-    //ReduceMinimum a;
-    //cout << a.reduce(table) <<endl;
+    ReduceMinimum a;
+    ReduceGCD b;
+    cout << a.reduce(hello2) << " " << b.reduce(hello2) <<endl;
     
     
-    for (int i=0;i<hello.size();i++) {
-        cout <<hello2.at(i)<<endl;
-    }
+    //for (int i=0;i<hello.size();i++) {
+    //    cout <<hello2.at(i)<<endl;
+    //}
     
     
     return 0;
