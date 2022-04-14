@@ -30,3 +30,4 @@ vector<int> FilterGeneric::filter(vector<int> inputVector) {
     return storage;
 }
 
+

@@ -8,5 +8,6 @@ class ReduceMinimum : public ReduceGeneric {
     int binaryOperator(int a, int b);
     
 };
+
 #endif
 

@@ -8,9 +8,10 @@ FilterNonPositive::FilterNonPositive() : FilterGeneric::FilterGeneric() {
 
 bool FilterNonPositive::g(int inp) {
     if (inp>0) {
-        return true;
+        return false;
     }
     else {
         return false;
     }
 }
+

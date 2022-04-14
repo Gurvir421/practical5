@@ -9,9 +9,10 @@ FilterForTwoDigitPositive::FilterForTwoDigitPositive() : FilterGeneric::FilterGe
 
 bool FilterForTwoDigitPositive::g(int inp) {
     if (inp < 100 && inp >9) {
-        return false;
-    }
-    else {
         return true;
     }
+    else {
+        return false;
+    }
 }
+

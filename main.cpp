@@ -23,19 +23,27 @@ int main () {
     MapAbsoluteValue m;
     MapTriple n;
     
+    FilterForTwoDigitPositive c;
+    FilterOdd d;
+    
     vector<int> hello=m.map(table);
     vector<int> hello2=n.map(hello);
+    vector<int> hello3=c.filter(hello2);
+    vector<int> hello4=d.filter(hello3);
+
+    
     //vector<int> hello=m.filter(table);
     
     ReduceMinimum a;
     ReduceGCD b;
-    cout << a.reduce(hello2) << " " << b.reduce(hello2) <<endl;
+    cout << a.reduce(hello4) << " " << b.reduce(hello4) <<endl;
     
     
-    //for (int i=0;i<hello.size();i++) {
-    //    cout <<hello2.at(i)<<endl;
+    //for (int i=0;i<hello4.size();i++) {
+    //    cout <<hello4.at(i)<<endl;
     //}
     
     
     return 0;
 }
+

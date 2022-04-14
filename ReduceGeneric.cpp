@@ -34,3 +34,4 @@ int ReduceGeneric::reduce(vector<int> inputVector) {
 
 
 
+
