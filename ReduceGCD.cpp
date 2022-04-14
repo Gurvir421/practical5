@@ -18,3 +18,5 @@ int ReduceGCD::binaryOperator(int a, int b) {
         return binaryOperator(b,a%b);
     }
 }
+
+
